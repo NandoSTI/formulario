@@ -1,0 +1,72 @@
+:root {
+    --bg-container: #efffff;
+    --clr-border: #ccc;
+    --clr-error: #c94d52;
+    --clr-button: #2756af;
+    --clr-text-button: #ffffff;
+    --clr-hover: #043da5;
+}
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-container);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .container_header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container .form .form_control {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container .form .form_control label {
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.container .form .form_control input,
+.container .form .form_control textarea {
+    padding: .4rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    border: 1px solid var(--clr-border);
+}
+
+.container .form .form_control .error {
+    color: var(--clr-error);
+    font-size: .7rem;
+}
+
+.container .form .button {
+    background-color: var(--clr-button);
+    color: var(--clr-text-button);
+    border-radius: .3rem;
+    font-weight: 500;
+    padding: .6rem;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.container .form .button:hover {
+    background-color: var(--clr-hover);
+}

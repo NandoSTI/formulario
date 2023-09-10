@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Formulário Js</title>
+  </head>
+  <body>
+    <main class="container">
+        <header class="container_header">
+            <h1>Formulário Js</h1>
+        </header>
+        <form class="form" >
+            <div class="form_control">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <div class="error"></div>
+            </div>
+            <div class="form_control">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+                <div class="error"></div>
+            </div>
+            <div class="form_control">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto">
+                <div class="error"></div>
+            </div>
+            <div class="form_control">
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem" name="mensagem">
+                <div class="error"></div>
+            </div>
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
