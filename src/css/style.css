@@ -70,3 +70,8 @@ html {
 .container .form .button:hover {
     background-color: var(--clr-hover);
 }
+
+.container .form .error-border input,
+.container .form .error-border textarea {
+    border-color: var(--clr-error);
+}
